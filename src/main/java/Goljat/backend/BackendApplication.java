@@ -26,7 +26,8 @@ public class BackendApplication {
 	 
 	    
 	@Bean
-	public CommandLineRunner demo(PlanRepository prepo,
+	public CommandLineRunner demo(
+			PlanRepository prepo,
 			WeekRepository wrepo,
 			TrainingRepository trepo,
 			UserRepository urepo,
@@ -46,8 +47,8 @@ public class BackendApplication {
 			week1.setDescription("deload");
 			
 			Week week2 = new Week();
-			week1.setPlan(plan);
-			week1.setDescription("loading weight");
+			week2.setPlan(plan);
+			week2.setDescription("loading weight");
 		
 			
 			
